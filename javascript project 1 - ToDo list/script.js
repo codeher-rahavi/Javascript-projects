@@ -1,7 +1,6 @@
 document.querySelector('#push').onclick= function(){
     if(document.querySelector('#newtask input').value.length === 0){
-        alert("Please Enter a task");
-        console.log("Hello");   
+        alert("Please Enter a task");   
     }
     else{
         document.querySelector('#tasks').innerHTML

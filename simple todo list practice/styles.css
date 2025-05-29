@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#5866f3,#b633d1);
+}
+.wrapper{
+    position:absolute;
+    width:40%;
+    min-width:450px;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    padding:30px 40px;
+}
+#container{
+    position:relative;
+    padding:30px 20px;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: space-between;
+    box-shadow:0 15px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+#container input{
+    padding:10px 20px;
+    border:2px solid #b633d1;
+    border-radius: 5px;
+    font-size:15px;
+    font-family:"Poppins",sans-serif;
+    background-color: white;
+    width:100%;
+    max-width:400px;
+    cursor:pointer;
+    box-shadow:0 5px 10px rgb(248, 220, 248)
+
+
+}
+#container input:focus{
+    outline: none;
+    border-color:#5866f3;
+     box-shadow:0 5px 10px rgb(178, 164, 244)
+}
+#container button{
+    width:5em;
+    border-radius: 5px;
+    border:none;
+    background-color: #5866f3;
+    font-size:15px;
+    font-family: "Poppins";
+    cursor: pointer;
+    color:white;
+}
+#container button:active{
+    color:black;
+}
+#taskDisplay{
+    background-color: white;
+    padding:30px 20px;
+    position: relative;
+    border-radius:10px;
+    width:100%;
+    box-shadow:0 15px 10px rgba(0,0,0,0.3);
+
+
+}
+.tasksDisplay{
+    background-color: #ffffff;
+    cursor:pointer;
+    border-bottom: 1px solid rgb(232, 225, 225);
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+    align-items: center;
+    padding:5px 10px;
+    height:50px;
+}
+.tasksDisplay span{
+    font-size:15px;
+    font-family: "Poppins";
+    font-weight: 400;
+    
+
+
+}
+.tasksDisplay button{
+    background-color: #5866f3;
+    border:none;
+    height:100%;
+    width:10%;
+    cursor: pointer;
+    outline: none;
+    color:#ffffff;
+    border-radius:5px;
+
+}
+.completed{
+    text-decoration: line-through;
+}
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    color:#3e3c77;
+    font-family: "Poppins";
+}
+.head{
+    margin-top:60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    margin-left:30px;
+    height:100%;
+}
+.symbol{
+    height:50px;
+    width:50px;
+}
