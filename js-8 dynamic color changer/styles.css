@@ -1,0 +1,37 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background:#121317;
+}
+.container{
+    background:#202229;
+    width:18.75em;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:1em;
+    padding:3em;
+
+}
+#result-box{
+    width:200px;
+    height:200px;
+    background-color: orange;
+    box-shadow: 0 0 0 10px #202229, 0 0 0 15px #f5f5f5;
+    border-radius:1em;
+    margin-bottom:2em;
+
+}
+#input-box{
+    width:100%;
+    padding:1em;
+    border:none;
+    outline:none;
+    border-radius:0.5em;
+    font-family:sans-serif;
+
+}
