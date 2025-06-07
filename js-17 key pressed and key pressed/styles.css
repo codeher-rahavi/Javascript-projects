@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background: linear-gradient(
+        to bottom,
+        rgb(90, 90, 255) 50%,
+        rgb(25, 21, 21) 50%
+    );
+}
+.container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    background-color: rgb(34, 33, 34);
+    width:470px;
+    height:300px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    padding:3em;
+    font-family: "moseratte";
+}
+.result{
+    color:  rgb(90, 90, 255);
+    font-size: 3em;
+}
+#text{
+    font-style: italic;
+    font-family: "Montserrat",monospace;
+}
+#key-code{
+    font-size:1.4em;
+}
