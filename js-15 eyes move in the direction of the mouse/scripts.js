@@ -1,5 +1,6 @@
 //Selecting the eye div
-let eye_ref = document.querySelectorAll('.eye');
+let eye_ref = document.querySelectorAll('.eye');//this is a nodelist containing both the eyes so it should be accessed using an array
+
 
 //mousemove for the device with the mouse and touchmove for the touchscreen devices
 
@@ -42,7 +43,7 @@ events.forEach((eventType) => {
         //convert radian to degree
         let rotationDegree = radian * (180 / Math.PI) * -1 + 180;
         // rotate the eye
-        eye.style.transform  = "rotate(" + rotationDegree + "deg)";
+        eye_ref.style.transform  = "rotate(" + rotationDegree + "deg)";
         });
     });
 });
