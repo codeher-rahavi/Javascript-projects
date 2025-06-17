@@ -40,6 +40,6 @@ body{
     font-style: italic;
     font-family: "Montserrat",monospace;
 }
-#key-code{
+#key-code,#key{
     font-size:1.4em;
 }

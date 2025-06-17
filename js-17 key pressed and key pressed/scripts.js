@@ -6,7 +6,7 @@ function handleKeyDown(event){
     keyCode = event.keyCode;
 
     letter.innerHTML = keyPressed;
-    code.innerHTML = `Key Code:${keyCode}`;
+    code.innerHTML = `${keyCode}`;
 
 };
 
