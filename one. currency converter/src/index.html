@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body class="min-h-screen w-full bg-violet-500">
+    <div class="transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  p-10 bg-white absolute w-130 rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.3)] ">
+        <div class="flex flex-col ">
+            <img src="currency converter.webp" alt="image" class="block mx-auto mt-0 w-32 h-32 bg-transparent flex justify-center align-center">
+            <p  class="text-2xl font-semibold text-center">CURRENCY CONVERTER</p>
+            <label for="amount" class="text-left mt-4 font-semibold text-lg">Amount :</label>
+            <input id="amount" type="number" value="100" class="outline-none border-b-2 border-black w-50% text-gray-500 text-xl">
+            <div class=" dropdowns flex flex-row justify-between mt-10">
+                <select  id="from-currency-select" class=" text-white text-xl text-center inline-block bg-violet-500  w-45 h-13 outline-none"></select>
+                <select id="to-currency-select" class=" text-white text-xl text-center inline-block bg-violet-500  w-45 h-13 outline-none"></select>
+            </div>
+           <button id="convert-button" class="bg-violet-500 w-40% mt-10 h-14 rounded-sm text-white text-lg font-semibold">Convert</button>
+           <div  id="result" class="bg-violet-100 h-14 mt-5 text-center leading-[3.5rem] text-xl font-medium" >234USD = 234.34AUD</div>
+        </div>
+    </div>
+    <!--script withe the array of supported country codes-->
+    <script src="currency-codes.js"></script>
+    <!--scripts with the API key-->
+    <script src="api-key.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html
