@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live word counter</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen h-full bg-violet-500 flex justify-center align-middle">
+    <div class="absolute p-10 bg-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-170 h-120 rounded-lg shadow-[0_0_30px_rgba(0,0,0,0.3)]">
+        <textarea  id="text-area" placeholder="Start typing here....." class="text-xl text-gray-500 w-full h-full outline-none resize-none"></textarea>
+        <div class="bg-black p-5 w-140 ml-6 h-30 rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.3)] flex flex-row justify-around align-middle">
+            <div class="">
+                <div id="word-count" class="text-white text-4xl font-semibold text-center">0</div>
+                <p  class="text-white text-2xl font-light mt-2">Words</p>
+                
+            </div>
+            <div>
+                <div id="char-count" class="text-white text-4xl font-semibold text-center">0</div>
+                <p class="text-white text-2xl mt-2 font-light">Characters</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
