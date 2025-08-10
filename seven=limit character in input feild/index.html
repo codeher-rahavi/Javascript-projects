@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit characters in input field</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#5d54b3] min-h-screen h-full">
+    <div class="bg-white p-10 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-130 rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.3)]">
+        <textarea  id="input" placeholder="Type somthing...." class="w-full outline resize-none h-50 p-5 text-lg border-2"></textarea>
+        <div id="length" class="text-lg text-gray-500 text-right mt-5">0/60</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
