@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive vertical tabs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen w-full bg-blue-600 ">
+    <div class="bg-white absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  min-w-[40em] h-100 shadow-[0_10px_30px_rgba(0,0,0,0.3)] rounded-lg grid grid-cols-[2fr_9fr] ">
+        <div class="tabs flex flex-col justify-middle bg-[#e4e9fd]">
+            <h3 class="text-center text-xl font-semibold cursor-pointer active h-30 w-35">Tab 1</h3>
+            <h3 class="text-center text-xl font-semibold cursor-pointer active h-30 w-35">Tab 2</h3>
+            <h3 class="text-center text-xl font-semibold cursor-pointer active h-30 w-35 ">Tab 3</h3>
+            <h3 class="text-center text-xl font-semibold cursor-pointer active h-30 w-35 ">Tab 4</h3>
+        </div>
+        <div class="tab-content bg-white p-10">
+            <!--first-->
+            <div class="">
+                <p class="text-3xl font-semibold ">First Title</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    . Pariatur nobis deserunt autem similique nisi quis adipisci rerum 
+                    quaerat officia hic.
+                </p>
+            </div>
+           <!--second-->
+            <div class="hidden">
+                <p class="text-3xl font-semibold">Second Title</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur nobis deserunt autem similique nisi quis adipisci rerum 
+                    quaerat officia hic.
+                </p>
+            </div>
+            <!--third-->
+            <div class="hidden">
+                <p class="text-3xl font-semibold">Third Title</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur nobis deserunt autem similique nisi quis adipisci rerum 
+                    quaerat officia hic.
+                </p>
+            </div>
+            <!--fourth-->
+            <div class="hidden">
+                <p class="text-3xl font-semibold">Fourth Title</p>
+                <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur nobis deserunt autem similique nisi quis adipisci rerum 
+                    quaerat officia hic.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
