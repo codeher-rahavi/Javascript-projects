@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random user generator</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!--font awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Tailwind theme config -->
+  <style type="text/tailwindcss">
+  @theme {
+    --color-theme: #5074f3;
+    --color-gray: #A19D9D;
+  }
+
+  @layer components {
+    .card-img{
+        @apply h-[200px] w-[200px] block mt-[-8.75em] mx-auto bg-white rounded-[50%];
+        box-shadow: 0 0 0 0.3em #ffffff, 0 0 0 0.9em var(--color-theme);
+    }
+  }
+</style>
+</head>
+<body class="bg-theme text-white font-[Poppins]">
+    <div class="container absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-[100%] max-w-[32em]">
+        <div class="card w-full p-[4em] bg-white text-center rounded-lg card-img h-[300px] mt-[20px]">
+            <div class="img-container card-img">
+                <img src="" alt="user image" class="rounded-[50%]">
+            </div>
+            <div class="details text-black text-xl  text-center leading-10 mt-[50px]"></div>
+        </div>
+        <button id="get-user-btn" class="block text-xl w-[90%] mx-auto mt-[2em] pt-[1.1em] pb-[1.1em] border-none outline-none rounded-[0.3em] font-semibold text-black cursor-pointer bg-white">Get Random User</button>
+    </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

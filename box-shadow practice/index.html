@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @layer components{
+            .card-img{
+                @apply h-[200px] w-[200px] block mt-[-8.75em] mx-auto bg-white rounded-[50%];
+                box-shadow: 0 0 0 0.3em #ffffff,0 0 0 0.9em #3b82f6;
+            }
+        }
+    </style>
+
+</head>
+<body class="bg-blue-500 min-h-screen"> 
+    <div class="container absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2  p-10 w-[100%] max-w-[36em] ">
+        <div class="card  w-full p-[4em] bg-white rounded-lg h-[400px] mt-[30px]">
+            <div class="imagecontainer card-img">
+                <img src="" alt="">
+            </div>
+            <div class="details"></div>
+        </div>
+    </div>
+</body>
+</html>
